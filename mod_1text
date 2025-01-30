@@ -1,0 +1,10 @@
+1.)   Create a file and add executable permission to all users (user, group and others)
+
+$ cat > module.txt                   #creating a file and adding text
+Janani engineer 1234
+Yamuna doctor 12345
+$ ls -l module.txt                     #checking the file permission before
+-rw-rw-r- - 1 ubuntu ubuntu 41 Jan 24 01:53 module.txt
+$ chmod a+x module.txt       #adding executable permission for all user
+$ ls -l module.txt                     # verifying the file permission after
+-rwxrwxr-x 1 ubuntu ubuntu 41 Jan 24 01:53 module.txt
